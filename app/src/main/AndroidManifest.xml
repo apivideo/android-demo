@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="video.api.android.app">
+
+    <application
+        android:name="video.api.android.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.AuthenticationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.ChartVideoActivity" />
+        <activity android:name=".activities.ChartLiveActivity" />
+        <activity
+            android:name=".activities.StatusVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SessionEventActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AnalyticsLiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AnalyticsVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UploadLogoPlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdatePlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShowPlayerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateCaptionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ListCaptionsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShowCaptionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UploadCaptionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UploadThumbnailLiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateLiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShowLiveActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateThumbnailVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpdateVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ShowVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.TokenActivity"
+            android:label="@string/title_activity_token"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AccountActivity"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.AnalyticsActivity"
+            android:label="@string/title_activity_analytics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PlayersActivity"
+            android:label="@string/title_activity_players"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.CaptionsActivity"
+            android:label="@string/title_activity_captions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.LivesActivity"
+            android:label="@string/title_activity_lives"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.VideosActivity"
+            android:label="@string/title_activity_videos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ApiActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.PlayActivity" />
+        <activity
+            android:name=".liveVideoBroadcaster.LiveVideoBroadcasterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppThemeDark" />
+        <service android:name="io.antmedia.android.broadcaster.LiveVideoBroadcaster" />
+
+        <!-- Required library to work on recent phones(galaxy S9)  -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/showPlayer"
+        android:title="Show Player" />
+    <item
+        android:id="@+id/updatePlayer"
+        android:title="Update Player" />
+
+    <item
+        android:id="@+id/uploadLogo"
+        android:title="Upload Logo" />
+
+    <item
+        android:id="@+id/deletePlayer"
+        android:title="Delete Player"/>
+
+
+</menu>

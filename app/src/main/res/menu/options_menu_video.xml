@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/shareVideo"
+        android:title="Share Video" />
+    <item
+        android:id="@+id/showVideo"
+        android:title="Show Video" />
+
+    <item
+        android:id="@+id/statusVideo"
+        android:title="Status Video" />
+
+    <item
+        android:id="@+id/updateVideo"
+        android:title="Update Video" />
+
+    <item
+        android:id="@+id/updateThumbnail"
+        android:title="Update Thumbnail" />
+
+    <item
+        android:id="@+id/deleteVideo"
+        android:title="Delete Video" />
+
+
+</menu>

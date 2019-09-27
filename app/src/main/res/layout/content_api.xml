@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.ApiActivity"
+    tools:showIn="@layout/app_bar_api">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/videos"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/playvideo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Videos"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lives"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/live" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="LiveStream"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/captions"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/captions" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Captions"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/players"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/videoplayer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Players"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/analytics"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/analytics" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Analytics"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/account"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/square"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/nav_header_desc"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:srcCompat="@drawable/account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Account"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

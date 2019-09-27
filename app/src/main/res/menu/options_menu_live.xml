@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/startLive"
+        android:title="Start Live" />
+
+    <item
+        android:id="@+id/showLive"
+        android:title="Show Live" />
+
+    <item
+        android:id="@+id/updateLive"
+        android:title="Update Live" />
+
+    <item
+        android:id="@+id/uploadThumbnail"
+        android:title="Upload Thumbnail" />
+
+    <item
+        android:id="@+id/deleteThumbnail"
+        android:title="Delete Thumbnail" />
+
+    <item
+        android:id="@+id/deleteLive"
+        android:title="Delete Live" />
+
+
+</menu>

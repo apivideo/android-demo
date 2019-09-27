@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/showCaption"
+        android:title="Show Caption" />
+    <item
+        android:id="@+id/updateCaption"
+        android:title="Update Caption" />
+
+    <item
+        android:id="@+id/deleteCaption"
+        android:title="Delete Captions" />
+
+</menu>

@@ -1,0 +1,95 @@
+package video.api.android.app.activities;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.tabs.TabLayout;
+
+import video.api.android.app.R;
+import video.api.android.app.uiLives.main.SectionsPagerAdapter;
+
+public class LivesActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lives);
+        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        viewPager.setAdapter(sectionsPagerAdapter);
+        TabLayout tabs = findViewById(R.id.tabs);
+        tabs.setupWithViewPager(viewPager);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+        navigationView.setNavigationItemSelectedListener(this);
+    }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.nav_home) {
+            Intent intent = new Intent(LivesActivity.this, ApiActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_video) {
+            Intent intent = new Intent( LivesActivity.this, VideosActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_live) {
+            Intent intent = new Intent(LivesActivity.this, LivesActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_captions) {
+            Intent intent = new Intent(LivesActivity.this, CaptionsActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_players) {
+            Intent intent = new Intent(LivesActivity.this, PlayersActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_analytics) {
+            Intent intent = new Intent(LivesActivity.this, AnalyticsActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_account) {
+            Intent intent = new Intent(LivesActivity.this, AccountActivity.class);
+            startActivity(intent);
+            finish();
+        } else if (id == R.id.nav_token) {
+            Intent intent = new Intent(LivesActivity.this, TokenActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+}

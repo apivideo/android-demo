@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="401dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="381dp"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="SessionId :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/sessionId"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="sessionId"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewOptions"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:text="&#8942;"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textSize="25dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Location :"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="country :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsCountry"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Country"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="City :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/analyticsCity"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="false"
+                        android:text="city"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Referrer :"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="url :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsUrl"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Url"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Medium :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsMedium"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="medium"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Source :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsSource"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="source"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="SearchTerm :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsSearchTerm"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="searchTerm"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Device :"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Type :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsType"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Type"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Vendor :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsVendor"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Vendor"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Model :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsModel"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Model"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Os :"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Name :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Name"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Shortname :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsShortname"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Shortname"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Version :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsVersion"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Version"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="347dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="Client :"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Type :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsClientType"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Type"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Name :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsClientName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Name"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Version :"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/analyticsClientVersion"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="false"
+                        android:text="Version"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".liveVideoBroadcaster.LiveVideoBroadcasterActivity"
+    android:id="@+id/root_layout">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/cameraPreview_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+        android:layout_gravity="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_cover"
+        android:background="#77000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/settings_button"
+            style="?borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:onClick="showSetResolutionDialog"
+            android:src="@drawable/ic_settings_white_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/changeCameraButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:onClick="changeCamera"
+            android:src="@drawable/ic_switch_camera_white_24dp" />
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Api Video"
+                android:textSize="25dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/stream_live_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_live"
+            android:layout_gravity="end|top"
+            android:text="@string/live_indicator"
+            android:padding="5dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="visible"
+        >
+        <Button
+            android:id="@+id/toggle_broadcasting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:textColor="@android:color/white"
+            android:text="@string/start_broadcasting"
+            android:onClick="toggleBroadcasting"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+    </LinearLayout>
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>

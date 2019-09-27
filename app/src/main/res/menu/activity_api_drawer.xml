@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homepage"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/playvideo"
+            android:title="@string/menu_video" />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/live"
+            android:title="@string/menu_live" />
+        <item
+            android:id="@+id/nav_captions"
+            android:icon="@drawable/captions"
+            android:title="@string/menu_captions" />
+        <item
+            android:id="@+id/nav_players"
+            android:icon="@drawable/videoplayer"
+            android:title="@string/menu_players" />
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/analytics"
+            android:title="@string/menu_analytics" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/account"
+                android:title="@string/menu_account" />
+            <item
+                android:id="@+id/nav_token"
+                android:icon="@drawable/token"
+                android:title="@string/menu_tokens" />
+        </menu>
+    </item>
+
+</menu>

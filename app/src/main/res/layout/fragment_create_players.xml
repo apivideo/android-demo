@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Shape Margin :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerShapeMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Shape Radius :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerShapeRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enable Api :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerEnableApi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enable Controls :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerEnableControls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Force Autoplay :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerForceAutoplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hide Title :"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/playerHideTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text=""
+                android:textSize="15dp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="Create"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

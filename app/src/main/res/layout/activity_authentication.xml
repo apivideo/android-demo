@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AuthenticationActivity"
+    android:background="@android:color/white">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="?actionBarSize"
+        android:padding="@dimen/appbar_padding"
+        android:text="Api Video"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@android:color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="104dp"
+            android:contentDescription="@string/nav_header_desc"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@drawable/index"
+            android:layout_gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/production"
+                android:text="Production"
+                android:textSize="20dp"
+                android:checked="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sandbox"
+                android:text="Sandbox"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/apiKey"
+            android:layout_width="335dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="20dp"
+            android:hint="Api Key"
+            android:inputType="textMultiLine"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <Button
+            android:id="@+id/validate_btn"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Validate"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.637"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
