@@ -38,7 +38,7 @@ public class FragmentCreate extends Fragment {
                 client.liveStreams.create(live, live1 -> {
                     liveName.setText("");
                     Intent intent = new Intent(FragmentCreate.this.getContext(), LiveVideoBroadcasterActivity.class);
-                    intent.putExtra("rtmpUrl", "rtmp://broadcast-staging.api.video/s/" + live1.getStreamKey());
+                    intent.putExtra("rtmpUrl", "rtmp://broadcast.api.video/s/" + live1.getStreamKey());
                     FragmentCreate.this.startActivity(intent);
                 }, error -> Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_LONG).show());
 

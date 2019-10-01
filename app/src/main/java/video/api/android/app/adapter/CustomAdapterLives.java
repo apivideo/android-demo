@@ -139,7 +139,7 @@ public class CustomAdapterLives extends RecyclerView.Adapter<RecyclerView.ViewHo
                     switch (item.getItemId()) {
                         case R.id.startLive:
                             Intent intentStart = new Intent(activity, LiveVideoBroadcasterActivity.class);
-                            intentStart.putExtra("rtmpUrl", "rtmp://broadcast-staging.api.video/s/" + live.getStreamKey());
+                            intentStart.putExtra("rtmpUrl", "rtmp://broadcast.api.video/s/" + live.getStreamKey());
                             activity.startActivity(intentStart);
                             break;
                         case R.id.showLive:
